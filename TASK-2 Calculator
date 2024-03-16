@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main()
+{int n1,n2;
+ char op;
+ cout<<"enter 1st number"<<endl;
+ cin>>n1;
+ cout<<"enter 2nd number"<<endl;
+ cin>>n2;
+ cout<<"enter the operator"<<endl;
+ cin>>op;
+ if(op=='+')
+ {
+    cout<<n1+n2;
+ }
+ else if(op=='-'){
+    cout<<n1-n2;
+ }
+ else if(op=='*'){
+    cout<<n1*n2;
+ }
+ else if(op=='/')
+    cout<<n1/n2;
+    else if(op=='%')
+    cout<<n1%n1;
+ else{
+    cout<<"invalide operator";
+ }
+   
+ 
+ 
+  
+}
