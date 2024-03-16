@@ -1,0 +1,41 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+using namespace std;
+int main(){
+    cout<<"             Welcome to Guess The Number game"<<endl;
+    cout<<"        You have to guess a number between 1 and 100"<<endl;
+    cout<< "     you'll have 10 tries to guess the secret number"<<endl;
+    int number, guess ,tries;
+    srand(time(0));// seeds ramdom number generator
+    number = (rand()%100)+1;
+    cout<<"enter a number between 1 and 100 : ";
+         tries=0;
+    for(int trires=0;trires<=10;trires++){
+        cin>>guess;
+       tries++;
+        if(guess>number){
+            cout<<"Nope," <<guess<<" is greater than the secret number"<<endl;
+            
+        }
+        else if(guess<number){
+            cout<<"Nope," <<guess<<" is smaller than the secret number"<<endl;
+            
+        }
+        else if(guess==number){
+            cout <<"Congrates "<<"you got the secret number in "<<tries<<" guesses "<<endl;
+            break;
+        }
+           if(tries==10) {
+               cout<<"game over";
+               break;
+           }
+        
+        }
+        cout<<"Thanks for playing";
+}
+       
+    
+    
+    
+
